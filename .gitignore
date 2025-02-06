@@ -1,0 +1,12 @@
+# macOS system files
+.DS_Store
+
+# Obsidian metadata (optional, to ignore workspace settings)
+.obsidian/
+
+# Logs and backups
+*.log
+*.bak
+
+# Ignore all Markdown backups but keep actual notes
+*_backup.md
