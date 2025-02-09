@@ -3,6 +3,8 @@
 
 # Obsidian metadata (optional, to ignore workspace settings)
 .obsidian/
+.obsidian/workspace.json
+
 
 # Logs and backups
 *.log
