@@ -1,4 +1,4 @@
-TL;DR:
+		TL;DR:
 - Trabajar de manera iterativa con resultados rápidos.
 - Probar casos faciles, intermedios y avanzados. Los datasets me los va a pasar Morlana.
 - Implementar primero LG+SP+GIM(encontraré el repo con GIM?). Luego implementar Roma y SIFT (o CudaSift).
