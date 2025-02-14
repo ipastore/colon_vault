@@ -1,7 +1,9 @@
-#### Unlock git
+#### Cheat git
 
 ```bash
 rm -f /Users/ignaciopastorebenaim/Documents/MGRCV/COLON/colon_matching/.git/index.lock
+
+git commit --amend --no-edit
 ```
 #### Git: remotes and submodules
 ```bash
@@ -53,6 +55,10 @@ git merge upstream/main  # or rebase: git rebase upstream/main
 #### ✅ **Push the updates to your fork (`origin`)**
 
 ```bash
+cd utils/image-matching_models
+git status
+git add .
+git commit -m "Modified some files in image-matching_models"
 git push origin main
 ```
 
@@ -74,7 +80,7 @@ git push origin main
 
 ---
 
-### **3️⃣ Cloning the Repo & Submodules on a New Machine**
+### ✅ **Cloning the Repo & Submodules on a New Machine**
 
 #### ✅ **Clone your main repository (including submodules)**
 
@@ -91,7 +97,12 @@ git submodule update --init --recursive
 ```
 
 #### ✅ **To pull the latest updates for the submodule**
+Since **submodules track a specific commit**, you need to explicitly update the submodule to the latest version. Run:
+```bash
+git submodule update --init --recursive
+```
 
+OR, if you want to ensure you’re pulling the latest commit from your fork (origin):
 ```bash
 git submodule update --remote --merge
 ```
@@ -112,21 +123,6 @@ Since you've pulled the commit that added the submodule on your **MacOS machine*
 
 ---
 
-## **✅ Fix: Initialize & Update the Submodule on MacOS**
-
-Run the following inside your `colon_matching` repository:
-
-```bash
-git submodule update --init --recursive
-```
-
-This will **download the contents** of the submodule (`image-matching_models`) inside the empty folder.
-
-If you want to **always fetch submodules automatically** when pulling from the main repo, use:
-
-```bash
-git pull --recurse-submodules
-```
 
 ---
 ## Step by Step guide to install repo
