@@ -135,22 +135,11 @@ conda create --name colon_matching python=3.10
 
 conda activate colon_matching
 
-#git clone --recursive https://github.com/alexstoken/image-matching-models
 git clone --recurse-submodules https://github.com/ipastore/colon_matching.git
 
 cd utils/image-matching-models
 
-pip install .
-
-pip install .[all] 
-OR (OH-MyZSH)
-pip install '.[all]'
-
-conda install ipykernel
-
-conda install pandas
-
-git remote set-url origin https://github.com/ipastore/image-matching_models.git 
+pip install -e '.[all]'
 
 git remote add upstream https://github.com/alexstoken/image-matching-models.git
 ```
@@ -170,5 +159,26 @@ conda install -c conda-forge cxx-compiler
 ```
 And continue as in macos?
 
-git lfs install
-git lfs track "*.pth"
+New environment!
+```bash
+conda create -n colon_matching python=3.10 -y
+
+conda activate colon_matching
+
+pip install -e '.[all]'
+
+conda install ipykernel
+
+conda install pandas
+
+```
+
+Ignored untracked files
+```bash
+
+cd utils/image-matching_models/matching/third_party/gim
+
+# Tell Git to ignore untracked files in this submodule
+git config core.ignorecase false
+git config status.showUntrackedFiles no
+```
