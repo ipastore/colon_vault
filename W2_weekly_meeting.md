@@ -9,6 +9,8 @@
 - Recibir la data y aplicar las implementaciones existentes. Earthmatcher creo que tiene varias. Buscar más.
 - Buscar si hay algo de LG + CudaSift.
 
+Attendees: JMM, Ruben, Morlana, Rodriguez
+
 Gantt, de manera iterativa. Leer bibliografía: iterativo. Más de research. 
 
 Centrarme en SuperGlue. 
