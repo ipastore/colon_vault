@@ -8,34 +8,53 @@
         "type": "tabs",
         "children": [
           {
-            "id": "04da1ab6001ab728",
+            "id": "d42be990f153028d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "W4.md",
+                "file": "W5.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "W4"
+              "title": "W5"
             }
           },
           {
-            "id": "783f2587bfa44f85",
+            "id": "dc4587ce648c15c2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "W4.md",
+                "file": "MAP.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "W4"
+              "title": "MAP"
+            }
+          },
+          {
+            "id": "e011a87ecdd85991",
+            "type": "leaf",
+            "state": {
+              "type": "kanban",
+              "state": {
+                "file": "TODO_KANBAN.md",
+                "kanbanViewState": {
+                  "kanban-plugin": "board",
+                  "list-collapse": [
+                    false
+                  ]
+                }
+              },
+              "icon": "lucide-trello",
+              "title": "TODO_KANBAN"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -67,7 +86,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#BUG",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -174,21 +193,40 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "obsidian-kanban:Create new board": false,
+      "templater-obsidian:Templater": false
     }
   },
-  "active": "04da1ab6001ab728",
+  "active": "dc4587ce648c15c2",
   "lastOpenFiles": [
-    "Cheatsheet.md",
+    "killed_bug.md",
+    "TODO_KANBAN.md",
+    "TODO.md",
+    "TEMPLATES/bug_template.md",
+    "TEMPLATES",
+    "2025-03-01.md",
+    "Untitled 1.canvas",
+    "Untitled.canvas",
+    "MAP.md",
+    "W1.md",
+    "W2.md",
+    "masks_before_vs_after.md",
+    "W5.md",
     "W4_weekly_meeting.md",
     "W4.md",
-    "W3_weekly_meeting.md",
     "W3.md",
+    "Git_Cheatsheet.md",
+    "w5_weekly_meeting.md",
+    "donde_se_filtra?.md",
+    "install_Cheatsheet.md",
+    "LightGlue_architecture.md",
+    "Untitled 1",
+    "W3_weekly_meeting.md",
     "W2_weekly_meeting.md",
     "README.md",
     "untitled folder",
     "First folder/First file.md",
-    "First folder",
-    "Untitled.canvas"
+    "First folder"
   ]
 }
