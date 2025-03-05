@@ -11,34 +11,6 @@
             "id": "d42be990f153028d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "W5.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "W5"
-            }
-          },
-          {
-            "id": "dc4587ce648c15c2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "MAP.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "MAP"
-            }
-          },
-          {
-            "id": "e011a87ecdd85991",
-            "type": "leaf",
-            "state": {
               "type": "kanban",
               "state": {
                 "file": "TODO_KANBAN.md",
@@ -53,8 +25,7 @@
               "title": "TODO_KANBAN"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -127,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01_weekly_meeting.md",
+                "file": "TODO_KANBAN.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -137,7 +108,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 01_weekly_meeting"
+              "title": "Backlinks for TODO_KANBAN"
             }
           },
           {
@@ -183,8 +154,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -198,35 +168,39 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "dc4587ce648c15c2",
+  "active": "d42be990f153028d",
   "lastOpenFiles": [
-    "killed_bug.md",
+    "W6.md",
     "TODO_KANBAN.md",
+    "scale_of_tvec_in_error_measurement.md",
+    "README.md",
+    "pycolmap_estimate_essential_matrix.md",
+    "masks_before_vs_after.md",
+    "LightGlue_architecture.md",
+    "killed_bug.md",
+    "install_Cheatsheet.md",
+    "how_to_compute_error_sketch.md",
+    "Git_Cheatsheet.md",
+    "donde_se_filtra?.md",
+    "COLMAP pipeline.md",
+    "00_MAP.md",
+    "W4_weekly_meeting.md",
+    "W5.md",
+    "w5_weekly_meeting.md",
     "TODO.md",
     "TEMPLATES/bug_template.md",
     "TEMPLATES",
     "2025-03-01.md",
     "Untitled 1.canvas",
     "Untitled.canvas",
-    "MAP.md",
     "W1.md",
     "W2.md",
-    "masks_before_vs_after.md",
-    "W5.md",
-    "W4_weekly_meeting.md",
     "W4.md",
     "W3.md",
-    "Git_Cheatsheet.md",
-    "w5_weekly_meeting.md",
-    "donde_se_filtra?.md",
-    "install_Cheatsheet.md",
-    "LightGlue_architecture.md",
     "Untitled 1",
     "W3_weekly_meeting.md",
     "W2_weekly_meeting.md",
-    "README.md",
     "untitled folder",
-    "First folder/First file.md",
     "First folder"
   ]
 }

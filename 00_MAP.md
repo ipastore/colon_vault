@@ -9,6 +9,7 @@
 	- [[W4_weekly_meeting]]
 - [[W5]]
 	- [[w5_weekly_meeting]]
+- [[W6]]
 
 ## Cheatsheets
 - [[Git_Cheatsheet]]
@@ -19,6 +20,9 @@
 - [[LightGlue_architecture |Light Glue Architecture]]
 - [[masks_before_vs_after | Donde es mejor filtrar? Solucionado]]
 - [[donde_se_filtra? | Donde tengo que filtrar para cada matcher?]]
+- [[pycolmap_estimate_essential_matrix |How to use estiamate_essential_matrix of pycolmap]]
+- [[how_to_compute_error_sketch |Error measurement: first sketch idea of mAA pipeline]]
+- [[scale_of_tvec_in_error_measurement|About scale of tvec in error measurement pipline]]
 
 ## TODO
 [[TODO_KANBAN]]
