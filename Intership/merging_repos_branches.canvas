@@ -1,0 +1,34 @@
+{
+	"nodes":[
+		{"id":"c9ef1cac8b107b19","type":"text","text":"ColonSuperPoint","x":-97,"y":-580,"width":250,"height":60,"color":"6"},
+		{"id":"fd416a5e81f30498","type":"text","text":"lightdepth","x":265,"y":-580,"width":250,"height":60,"color":"6"},
+		{"id":"330d1ece43c0e8ee","type":"text","text":"ColonSuperpoinTorch","x":620,"y":-580,"width":250,"height":60,"color":"6"},
+		{"id":"c20f51de68a0c5c4","type":"text","text":"Main Workspace: COLON_MATCHING","x":120,"y":-780,"width":225,"height":55,"color":"5"},
+		{"id":"3c8c64c8766eff55","type":"text","text":"Forked repo:\norigin  https://github.com/ipastore/ColonSuperPoint.git (push)\n\nBranchs: \nmaster\n","x":-277,"y":-480,"width":320,"height":160,"color":"3"},
+		{"id":"75f457c921f026ff","type":"text","text":"Cloned repo:\norigin  https://github.com/endomapper/lightdepth.git (push). Wout permissions to push\n\nBranchs: \nmain\n","x":195,"y":-480,"width":320,"height":160,"color":"3"},
+		{"id":"effaec8059fb840f","type":"text","text":"Forked repo:\norigin  https://github.com/ipastore/ColonSuperpoinTorch.git (push). \n\nBranchs: \nmaster\n","x":585,"y":-480,"width":320,"height":160,"color":"3"},
+		{"id":"b3834491a68b6425","type":"text","text":"gim","x":-1197,"y":160,"width":250,"height":60,"color":"4"},
+		{"id":"12e5e4189b584715","type":"text","text":"LightGlue","x":-897,"y":160,"width":250,"height":60,"color":"4"},
+		{"id":"b0217100777b2ed8","type":"text","text":"Forked repo: \norigin  https://github.com/ipastore/gim_mask.git (push)\n\nBranchs: \nmain\nfeature/mask","x":-1432,"y":260,"width":360,"height":220,"color":"3"},
+		{"id":"5dbad4edea308b9c","type":"text","text":"Forked repo: \norigin  https://github.com/ipastore/LightGlue_mask.git (push)\n\nBranchs: \nmain\nfeature/lightglue_mask","x":-947,"y":260,"width":360,"height":220,"color":"3"},
+		{"id":"112c74ea415d2209","type":"text","text":"colon_matching","x":-797,"y":-580,"width":250,"height":60,"color":"6"},
+		{"id":"4a79e79bd55b0e5c","type":"text","text":"Private   repo:\norigin  https://github.com/ipastore/colon_matching.git (push)\n\nBranchs: \nmain\nfeature/mask","x":-1197,"y":-520,"width":320,"height":160,"color":"3"},
+		{"id":"66f6dc11d48e3070","type":"text","text":"image_matching_models","x":-817,"y":-320,"width":250,"height":60,"color":"#d41111"},
+		{"id":"b51840936e7222d8","type":"text","text":"Forked repo: \norigin  https://github.com/ipastore/image-matching-models.git (push\n\nBranchs: \nmain\nfeature/mask","x":-1197,"y":-220,"width":360,"height":220,"color":"3"},
+		{"id":"0a5f4b5475c36f84","type":"text","text":"RoMa","x":-537,"y":160,"width":250,"height":60,"color":"4"},
+		{"id":"260d95b21181a0a3","type":"text","text":"All the other repos","x":-117,"y":160,"width":250,"height":60,"color":"#180e01"},
+		{"id":"403ffa74b9812d5b","type":"text","text":"Forked repo: \norigin https://github.com/ipastore/RoMa_mask.git (push)\n\nBranchs: \nmain\nfeature/TinyRoMa_mask","x":-514,"y":260,"width":360,"height":220,"color":"3"},
+		{"id":"11207205b4f52c72","type":"text","text":"Automated Forked repos by forking parent folder?\n","x":-84,"y":260,"width":360,"height":80,"color":"3"}
+	],
+	"edges":[
+		{"id":"4c927cce1c6253ed","fromNode":"c20f51de68a0c5c4","fromSide":"bottom","toNode":"c9ef1cac8b107b19","toSide":"top"},
+		{"id":"9a50aad071209adf","fromNode":"c20f51de68a0c5c4","fromSide":"bottom","toNode":"fd416a5e81f30498","toSide":"top"},
+		{"id":"1cfaa8dabadc045a","fromNode":"c20f51de68a0c5c4","fromSide":"right","toNode":"330d1ece43c0e8ee","toSide":"top"},
+		{"id":"d7adaaebb1734a11","fromNode":"112c74ea415d2209","fromSide":"bottom","toNode":"66f6dc11d48e3070","toSide":"top"},
+		{"id":"1e11c9faa6fe253e","fromNode":"66f6dc11d48e3070","fromSide":"bottom","toNode":"b3834491a68b6425","toSide":"top"},
+		{"id":"4463ea6a8bb6cc08","fromNode":"66f6dc11d48e3070","fromSide":"bottom","toNode":"12e5e4189b584715","toSide":"top"},
+		{"id":"fd1459ad5fccc033","fromNode":"66f6dc11d48e3070","fromSide":"bottom","toNode":"0a5f4b5475c36f84","toSide":"top"},
+		{"id":"051dd1ca69a186ec","fromNode":"66f6dc11d48e3070","fromSide":"bottom","toNode":"260d95b21181a0a3","toSide":"top"},
+		{"id":"9cb5a597c1a8a44f","fromNode":"c20f51de68a0c5c4","fromSide":"left","toNode":"112c74ea415d2209","toSide":"top"}
+	]
+}

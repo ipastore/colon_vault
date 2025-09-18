@@ -1,0 +1,6 @@
+
+Should it be in export.py?
+
+Or should we also filter them in the Colon.py (dataset)?
+
+We are not going to filter them in the train_heatmap for now

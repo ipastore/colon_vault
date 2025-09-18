@@ -1,0 +1,14 @@
+## TODO
+- Aplicar la máscara antes de exportar: la Loss debería fluctuar menos
+- Subir batch_size a 16: la Loss debería fluctuar menos
+- Probar con y sin Data augmentation
+- Además del video tiene que haber un output con el detector. Es decir, hacer un video de detector y hacer un video de tracking
+- Con video maker podría 
+- Poder explicar HA y las Losses (la de Leon incluida)
+- Correr la demo con el sp de Leon (para esto tengo que adaptar el modelo de superpointNet a la demo)
+- Ruben dice que es mejor 18 epochs con 10.000 imagenes vs 180 epochs con 1.000 imagenes
+- Hacer papeleo del TFM, mandar el pdf con mis datos, para que ellos rellenen y además darles un google doc con los objetivos, etc (para los ODS solo hay que poner el numero). TFM eina: Proposal of Master Final Project (TypeB)
+- Como entrenaron el spuperpoint original? que threshold usaron?
+- Para hacer videos, tienen que estar todos juntos uno al lado de otro
+- La baseline quizás no debería ser el modelo de MagicLeap: habría que probar como da con los otros modelos. Entonces además de utilizar el modelo original, adaptar para superpointNet y SuperpointNet_gauss2
+- Rodriguez dice que con un lr tan bajo no estaría entrenando mucho
