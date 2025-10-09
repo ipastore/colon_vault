@@ -57,3 +57,61 @@ docker builder prune -a
 ```
 
 
+# Erasing old docker image and building a new one for ColonSuperpoinTorch
+
+## Rebuilding the Docker Image After Code Changes
+
+To ensure your Docker image includes the recent changes to `net_parallel()` in model_wrap.py, you'll need to rebuild the image. Here's how to clean up and rebuild everything:
+
+### Step 1: Stop any running containers
+
+```bash
+# Stop any containers using the image
+docker ps -a | grep colonsp | awk '{print $1}' | xargs -r docker stop
+```
+
+### Step 2: Remove the existing image
+
+```bash
+# Remove the image
+docker rmi colonsp:dev
+```
+
+### Step 3: Clean up Docker system (optional but recommended)
+
+```bash
+# Remove dangling images, containers, networks and build cache
+docker system prune -f
+```
+
+### Step 4: Rebuild the image
+
+```bash
+# Rebuild for amd64 architecture (for Linux servers)
+docker buildx build --platform=linux/amd64 --load -t colonsp:dev .
+```
+
+### Step 5: Verify the new image
+
+```bash
+# Check that the image was created
+docker images | grep colonsp
+```
+
+After rebuilding, any new Docker containers will include your updated code. The improved `net_parallel()` method will now properly handle CPU-only environments and prevent the hanging issue you experienced.
+
+# Test ColonSuperpoinTorch
+
+For export: 
+```bash
+docker run --user $(id -u):$(id -g) --gpus all  --rm --shm-size=1g   -v $(pwd)/datasets:/workspace/ColonSuperpoinTorch/datasets   -v $(pwd)/runs:/workspace/ColonSuperpoinTorch/runs   -v $(pwd)/logs:/workspace/ColonSuperpoinTorch/logs   -v $(pwd)/configs:/workspace/ColonSuperpoinTorch/configs   -v $(pwd)/models:/workspace/ColonSuperpoinTorch/models   colonsp:dev   python export.py export_detector_homoAdapt configs/superpoint_colon_export_test.yaml test --outputImg > export_log.out 2>&1
+```
+
+For train: 
+
+```bash
+docker run --user $(id -u):$(id -g) --gpus all  --rm --sh
+m-size=1g   -v $(pwd)/datasets:/workspace/ColonSuperpoinTorch/datasets   -v $(pwd)/runs:/workspace/ColonSuperpoinTorch/runs  
+ -v $(pwd)/logs:/workspace/ColonSuperpoinTorch/logs   -v $(pwd)/configs:/workspace/ColonSuperpoinTorch/configs   -v $(pwd)/mo
+dels:/workspace/ColonSuperpoinTorch/models   colonsp:dev   python train4.py train_joint configs/superpoint_colon_train_heatmap_test.yaml test_train  > train_log.out 2>&1
+```

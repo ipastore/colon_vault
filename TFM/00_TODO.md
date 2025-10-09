@@ -6,11 +6,11 @@ kanban-plugin: board
 
 ## TODO
 
-- [ ] [[make_a_proper_demo_superpoint]]
-- [ ] [[apply_camera_mask_before_exporting]]
-- [ ] [[experiment_runs]]
 - [ ] [[explain_theory]]
-- [ ] papeleo TFM
+- [ ] Probar con ADamW, basandonos en un modelo que ya funciona
+- [ ] Hacer un export y entrenamiento con todos los datos
+- [ ] Estudiar el paper de Leon y su repo para entender la Loss y como es el entrenamiento en su repo
+- [ ] Hacer una demo de la evolución de los heatmaps según los checkpoints
 
 
 ## Doing
@@ -19,6 +19,17 @@ kanban-plugin: board
 
 ## Done
 
+- [ ] papeleo TFM
+- [ ] COn el export D hacer un export de th bajo y entrenar con th bajo
+- [ ] Averiguar si el heatmap está normalizado
+- [ ] Hacer informes de tracking avanzados (estan en un .md dentro de la demo)
+- [ ] Hacer un export D con más imagenes de training, sepearado del video de val y el video de test
+- [ ] [[make_a_proper_demo_superpoint]]
+- [ ] [[cropear_videos_para_dataset]]
+- [ ] condicionales en mask export vs training
+- [ ] [[apply_camera_mask_before_exporting]]
+- [ ] Desambiguar camera-mask para hacer mas fina la mascara especular
+- [ ] [[experiment_runs]]
 
 
 ## TODO_error_measurement

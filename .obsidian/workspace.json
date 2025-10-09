@@ -8,123 +8,35 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e04e7daed2a0ad0d",
+            "id": "53faa3702de9c09e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TFM/Timeline/meetings/3W_weekly_meeting.md",
+                "file": "TFM/Timeline/5W.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3W_weekly_meeting"
+              "title": "5W"
             }
           },
           {
-            "id": "4387ba684ab13d17",
+            "id": "83107a0aa4f86ad4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TFM/Timeline/meetings/2W_weekly_meeting.md",
+                "file": "TFM/Timeline/meetings/6W_weekly_meeting.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2W_weekly_meeting"
-            }
-          },
-          {
-            "id": "d59f97862fe63e68",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TFM/Timeline/meetings/2W_weekly_meeting.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2W_weekly_meeting"
-            }
-          },
-          {
-            "id": "e927b34bbead389f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TFM/TODOs/apply_camera_mask_before_exporting.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "apply_camera_mask_before_exporting"
-            }
-          },
-          {
-            "id": "8e738ee487d1864d",
-            "type": "leaf",
-            "state": {
-              "type": "kanban",
-              "state": {
-                "file": "TFM/00_TODO.md",
-                "kanbanViewState": {
-                  "kanban-plugin": "board",
-                  "list-collapse": [
-                    null,
-                    false,
-                    false
-                  ]
-                }
-              },
-              "icon": "lucide-trello",
-              "title": "00_TODO"
-            }
-          },
-          {
-            "id": "78c7d330985b532f",
-            "type": "leaf",
-            "state": {
-              "type": "kanban",
-              "state": {
-                "file": "TODO.md",
-                "kanbanViewState": {
-                  "kanban-plugin": "board",
-                  "list-collapse": [
-                    null,
-                    false,
-                    false
-                  ]
-                }
-              },
-              "icon": "lucide-trello",
-              "title": "TODO"
-            }
-          },
-          {
-            "id": "aeaefc6659beb42a",
-            "type": "leaf",
-            "state": {
-              "type": "kanban",
-              "state": {
-                "file": "TODO.md",
-                "kanbanViewState": {
-                  "kanban-plugin": "board",
-                  "list-collapse": [
-                    null,
-                    false,
-                    false
-                  ]
-                }
-              },
-              "icon": "lucide-trello",
-              "title": "TODO"
+              "title": "6W_weekly_meeting"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -156,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "00_che",
+                "query": "nvidia",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -197,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TFM/00_TODO.md",
+                "file": "TFM/Timeline/4W.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -207,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 00_TODO"
+              "title": "Backlinks for 4W"
             }
           },
           {
@@ -216,12 +128,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TFM/00_TODO.md",
+                "file": "TFM/TODOs/experiment_runs.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 00_TODO"
+              "title": "Outgoing links from experiment_runs"
             }
           },
           {
@@ -243,13 +155,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TFM/00_TODO.md",
+                "file": "TFM/TODOs/experiment_runs.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 00_TODO"
+              "title": "Outline of experiment_runs"
             }
           }
         ]
@@ -273,38 +185,39 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "8e738ee487d1864d",
+  "active": "83107a0aa4f86ad4",
   "lastOpenFiles": [
-    "00_TFM_MAP.md",
-    "TFM/Timeline/meetings/2W_weekly_meeting.md",
-    "TFM/TODOs/apply_camera_mask_before_exporting.md",
-    "Intership/merging_repos_branches.canvas",
-    "TFM/TODOs/slides_for_3W_meeting.md",
-    "TFM/TODOs/experiment_runs.md",
-    "sota_slides_for_2W_meeting.md",
-    "TFM/TODOs/make_a_proper_demo_superpoint.md",
+    "Passwords/DGX.md",
+    "Cheatsheets/00_Cheatsheets.md",
+    "Cheatsheets/Docker.md",
+    "TFM/Timeline/meetings/6W_weekly_meeting.md",
+    "TFM/Timeline/6W.md",
+    "Intership/Timeline/W6_weekly_meeting.md",
     "TFM/00_TODO.md",
-    "TFM/TODOs",
-    "TFM/TODOs/explain_theory.md",
-    "Intership/TODO_intership.md",
-    "Intership/tidy_up_repo.md",
-    "TFM/Timeline/1W.md",
-    "TODO_KANBAN.md",
+    "TFM/Timeline/5W.md",
     "Intership/00_MAP.md",
+    "Passwords/Nvidia Containers.md",
+    "Passwords/Nvidia.md",
+    "Cheatsheets/vim.md",
+    "ffmpeg.md",
+    "TFM/Timeline/meetings/5W_weekly_meeting.md",
+    "00_TFM_MAP.md",
+    "Cheatsheets/shortcuts_for_rectangle_macos.png",
+    "TFM/Timeline/meetings/4W_weekly_meeting.md",
+    "Intership/Notes/Choosing_models_from_COLMAP.md",
+    "TFM/Timeline/4W.md",
+    "Cheatsheets/git_merge_options.md",
+    "cropear_videos_para_dataset.md",
+    "Cheatsheets/conda.md",
+    "Cheatsheets/git.md",
+    "superpoint_demo.md",
+    "TFM/TODOs/experiment_runs.md",
+    "TFM/Timeline/3W.md",
+    "TFM/Timeline/2W.md",
+    "Intership/merging_repos_branches.canvas",
+    "TFM/TODOs",
     "Screenshot 2025-09-10 at 13.52.30.png",
     "Screenshot 2025-09-10 at 11.44.08.png",
-    "scale_of_tvec_in_error_measurement.md",
-    "README.md",
-    "Intership/Notes/donde_se_filtra?.md",
-    "donde_se_filtra?.md",
-    "Intership/Timeline/W5.md",
-    "Intership/Timeline/w5_weekly_meeting.md",
-    "TODO_Master.md",
-    "pycolmap_estimate_essential_matrix.md",
-    "masks_before_vs_after.md",
-    "Intership/Notes/OOM_killed_not_returning_fig_bug.md",
-    "Intership/Notes/error_de_cam_from_world.md",
-    "killed_bug.md",
     "TFM/Timeline/meetings",
     "TFM/Timeline",
     "TFM",
@@ -313,7 +226,6 @@
     "TFM/TFM-SOTA/SOTA-claude-pdf.pdf",
     "TFM/TFM-SOTA",
     "Literature_Notes",
-    "Cheatsheets/shortcuts_for_rectangle_macos.png",
     "Cheatsheets",
     "assets/Screenshot 2025-06-06 at 22.38.25.png",
     "assets/Screenshot 2025-06-06 at 22.33.46.png",
