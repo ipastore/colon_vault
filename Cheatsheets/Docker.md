@@ -102,16 +102,90 @@ After rebuilding, any new Docker containers will include your updated code. The 
 
 # Test ColonSuperpoinTorch
 
-For export: 
+**For export:** 
 ```bash
-docker run --user $(id -u):$(id -g) --gpus all  --rm --shm-size=1g   -v $(pwd)/datasets:/workspace/ColonSuperpoinTorch/datasets   -v $(pwd)/runs:/workspace/ColonSuperpoinTorch/runs   -v $(pwd)/logs:/workspace/ColonSuperpoinTorch/logs   -v $(pwd)/configs:/workspace/ColonSuperpoinTorch/configs   -v $(pwd)/models:/workspace/ColonSuperpoinTorch/models   colonsp:dev   python export.py export_detector_homoAdapt configs/superpoint_colon_export_test.yaml test --outputImg > export_log.out 2>&1
+docker run --user $(id -u):$(id -g) --gpus all  --rm --shm-size=1g   -v $(pwd)/datasets:/workspace/ColonSuperpoinTorch/datasets   -v $(pwd)/runs:/workspace/ColonSuperpoinTorch/runs   -v $(pwd)/logs:/workspace/ColonSuperpoinTorch/logs   -v $(pwd)/configs:/workspace/ColonSuperpoinTorch/configs   -v $(pwd)/models:/workspace/ColonSuperpoinTorch/models   colonsp:dev   python export.py export_detector_homoAdapt configs/superpoint_colon_export_test.yaml test --outputImg > log.out 2>&1
 ```
-
-For train: 
+ *For rene (export)*
+ 
+```bash
+docker run --user $(id -u):$(id -g) --gpus all --rm --shm-size=1g \
+  -v $(pwd)/datasets:/workspace/ColonSuperpoinTorch/datasets \
+  -v $(pwd)/runs:/workspace/ColonSuperpoinTorch/runs \
+  -v $(pwd)/logs:/workspace/ColonSuperpoinTorch/logs \
+  -v $(pwd)/configs:/workspace/ColonSuperpoinTorch/configs \
+  -v $(pwd)/models:/workspace/ColonSuperpoinTorch/models \
+  colonsp:dev \
+  python train4.py train_joint configs/superpoint_colon_train_heatmap_test.yaml test_train 2>&1 | tee -a log.out
+ 
+```
+O 
+```bash
+docker run --user $(id -u):$(id -g) --gpus all --rm --shm-size=1g \
+-v $(pwd):/workspace/ColonSuperpoinTorch \
+  colonsp \
+  python export.py export_detector_homoAdapt configs/superpoint_colon_export_test.yaml test --outputImg 2>&1 | tee -a log.out
+```
+**For train:** 
 
 ```bash
 docker run --user $(id -u):$(id -g) --gpus all  --rm --sh
 m-size=1g   -v $(pwd)/datasets:/workspace/ColonSuperpoinTorch/datasets   -v $(pwd)/runs:/workspace/ColonSuperpoinTorch/runs  
  -v $(pwd)/logs:/workspace/ColonSuperpoinTorch/logs   -v $(pwd)/configs:/workspace/ColonSuperpoinTorch/configs   -v $(pwd)/mo
-dels:/workspace/ColonSuperpoinTorch/models   colonsp:dev   python train4.py train_joint configs/superpoint_colon_train_heatmap_test.yaml test_train  > train_log.out 2>&1
+dels:/workspace/ColonSuperpoinTorch/models   colonsp:dev   python train4.py train_joint configs/superpoint_colon_train_heatmap_test.yaml test_train  > log.out 2>&1
+```
+
+*For rene (train)*
+
+```bash
+docker run --user $(id -u):$(id -g) --gpus all  --rm --shm-size=1g \
+-v $(pwd):/workspace/ColonSuperpoinTorch \
+   colonsp \
+   python train4.py train_joint configs/superpoint_colon_train_heatmap_test.yaml test_train  2>&1 | tee -a log.out
+```
+
+# Run train in rene
+
+```bash
+docker run --user $(id -u):$(id -g) --gpus all  --rm --shm-size=2g \
+-v $(pwd):/workspace/ColonSuperpoinTorch \
+   colonsp \
+   python train4.py train_joint configs/superpoint_colon_train_heatmap.yaml 20_F_RTX3090_bs32 --eval  2>&1 | tee -a log.out
+```
+
+# For the docker image of gluefactory
+
+**Para evaluar hpatches**
+```bash
+docker run --user $(id -u):$(id -g) --gpus all -it --shm-size=8g   -v /home/student/glue-factory-colon:/workspace   -v /media/student/HDD/nacho/glue-factory/data:/me
+dia/student/HDD/nacho/glue-factory/data   gluefactory:cuda11.4   bash -c "cd /workspace && conda run -n gluefactory python -m gluefactory.eval.hpatches --conf superpoint+lightglue-official --overwrite"
+```
+
+**Para entrenar en megadepth**
+
+```bash
+docker run --user $(id -u):$(id -g) --gpus all -it --shm-size=8g   -v /home/student/glue-factory-colon:/workspace   -v /media/student/HDD/nacho/glue-factory/data:/media/student/HDD/nacho/glue-factory/data   gluefactory:cuda11.4   bash -c "cd /workspace && conda run -n gluefactory python -m gluefactory.train sp+lg_megadepth --conf gluefactory/configs/superpoint+lightglue_megadepth.yaml"
+```
+
+
+# Delete all images except endocarto-gui
+```bash
+docker images -q | xargs -r docker inspect --format '{{.RepoTags}} {{.Id}}' | \
+grep -v 'endocarto-gui' | awk '{print $NF}' | xargs -r docker rmi
+```
+
+
+# Sift-lg_megadepth train with output in log.out
+
+```bash
+docker run --user $(id -u):$(id -g) --gpus all -it --shm-size=8g \
+  -v /home/student/glue-factory-colon:/workspace \
+  -v /media/student/HDD/nacho/glue-factory/data:/workspace/data \
+  gluefactory:cuda11.4 \
+  bash -c "cd /workspace && conda run -n gluefactory python -m gluefactory.train sift+lg_homography --conf gluefactory/configs/sift+lightglue_endomapper_homography.yaml 2>&1 | tee log.out"
+```
+
+# Build docker image with user without root
+```bash
+docker build --build-arg USER_UID=$(id -u) --build-arg USERNAME=dev -t gluefactory:cuda11.4 . 2>&1 | tee log_docker_build.out
 ```

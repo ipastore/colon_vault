@@ -4,39 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "36dd11bdaa61b0dd",
+        "id": "96185717157bf463",
         "type": "tabs",
         "children": [
           {
-            "id": "53faa3702de9c09e",
+            "id": "701c3197101612ca",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TFM/Timeline/5W.md",
+                "file": "TFM/Timeline/29W.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "5W"
-            }
-          },
-          {
-            "id": "83107a0aa4f86ad4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TFM/Timeline/meetings/6W_weekly_meeting.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "6W_weekly_meeting"
+              "title": "29W"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -68,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "nvidia",
+                "query": "kill ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -93,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 274.5
   },
   "right": {
     "id": "4b26915ec246f542",
@@ -109,8 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TFM/Timeline/4W.md",
-                "collapseAll": false,
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
@@ -119,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 4W"
+              "title": "Backlinks"
             }
           },
           {
@@ -128,12 +112,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TFM/TODOs/experiment_runs.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from experiment_runs"
+              "title": "Outgoing links"
             }
           },
           {
@@ -155,13 +138,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TFM/TODOs/experiment_runs.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of experiment_runs"
+              "title": "Outline"
             }
           }
         ]
@@ -185,55 +167,55 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "83107a0aa4f86ad4",
+  "active": "701c3197101612ca",
   "lastOpenFiles": [
-    "Passwords/DGX.md",
+    "TFM/Timeline/28W.md",
+    "setup_a_new_machine.md",
+    "TFM/Timeline/29W.md",
+    "TFM/Timeline/27W.md",
+    "setu}.md",
+    "training_py_cudasift_LG_variables.md",
+    "Cheatsheets/ffmpeg.md",
     "Cheatsheets/00_Cheatsheets.md",
-    "Cheatsheets/Docker.md",
-    "TFM/Timeline/meetings/6W_weekly_meeting.md",
-    "TFM/Timeline/6W.md",
-    "Intership/Timeline/W6_weekly_meeting.md",
+    "TFM/Timeline/14W.md",
+    "Cheatsheets/how_to_use_codex.md",
+    "Cheatsheets/install_image_matching_repo_Cheatsheet.md",
+    "scripts_docker/train.sh.md",
+    "scripts_docker/tensorboard.sh.md",
+    "scripts_docker/export_megadepth.sh.md",
+    "scripts_docker/build.sh.md",
+    "other_cpus.md",
+    "build.docerk.sh.md",
     "TFM/00_TODO.md",
-    "TFM/Timeline/5W.md",
-    "Intership/00_MAP.md",
-    "Passwords/Nvidia Containers.md",
-    "Passwords/Nvidia.md",
-    "Cheatsheets/vim.md",
-    "ffmpeg.md",
-    "TFM/Timeline/meetings/5W_weekly_meeting.md",
     "00_TFM_MAP.md",
-    "Cheatsheets/shortcuts_for_rectangle_macos.png",
-    "TFM/Timeline/meetings/4W_weekly_meeting.md",
-    "Intership/Notes/Choosing_models_from_COLMAP.md",
-    "TFM/Timeline/4W.md",
-    "Cheatsheets/git_merge_options.md",
-    "cropear_videos_para_dataset.md",
-    "Cheatsheets/conda.md",
-    "Cheatsheets/git.md",
-    "superpoint_demo.md",
-    "TFM/TODOs/experiment_runs.md",
-    "TFM/Timeline/3W.md",
-    "TFM/Timeline/2W.md",
+    "**url**.md",
+    "Untitled 1.md",
+    "scripts_docker",
+    "0001-Fix-sift-training.patch",
+    "Dockerfile",
+    "flash_vs_fp16_bf16.md",
+    "gradients_loss.md",
+    "detailed_explanation_fp.md",
+    "trying_to_understand_x.half().md",
+    "torch.autocast.md",
+    "Screenshot 2026-01-05 at 01.17.37.png",
+    "Screenshot 2026-01-05 at 01.17.00.png",
+    "Screenshot 2026-01-05 at 01.16.08.png",
+    "Screenshot 2026-01-05 at 01.15.36.png",
+    "Screenshot 2026-01-05 at 01.14.46.png",
+    "Screenshot 2026-01-05 at 01.09.20.png",
+    "Screenshot 2026-01-05 at 01.08.45.png",
+    "Screenshot 2026-01-05 at 01.08.19.png",
+    "Screenshot 2026-01-05 at 01.08.07.png",
+    "Screenshot 2026-01-05 at 01.07.35.png",
+    "TFM/Timeline/17W",
+    "IMG_7209.heic",
+    "assets/Servicio_VPN_Doble_Factor.pdf",
+    "TFM/theory",
     "Intership/merging_repos_branches.canvas",
     "TFM/TODOs",
-    "Screenshot 2025-09-10 at 13.52.30.png",
-    "Screenshot 2025-09-10 at 11.44.08.png",
     "TFM/Timeline/meetings",
     "TFM/Timeline",
-    "TFM",
-    "TFM/TFM-SOTA/Image_Matching_in_2025_no_gif.pdf",
-    "TFM/TFM-SOTA/SOTA-GPT.pdf",
-    "TFM/TFM-SOTA/SOTA-claude-pdf.pdf",
-    "TFM/TFM-SOTA",
-    "Literature_Notes",
-    "Cheatsheets",
-    "assets/Screenshot 2025-06-06 at 22.38.25.png",
-    "assets/Screenshot 2025-06-06 at 22.33.46.png",
-    "assets/Screenshot 2025-05-27 at 10.54.35.png",
-    "assets/Screenshot 2025-05-27 at 10.54.35 1.png",
-    "assets/Screenshot 2025-05-27 at 10.54.31.png",
-    "assets/Screenshot 2025-05-27 at 10.54.31 1.png",
-    "assets/Screenshot 2025-05-27 at 10.54.27.png",
     "Untitled.canvas",
     "Untitled 1.canvas"
   ]

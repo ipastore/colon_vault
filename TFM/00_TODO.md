@@ -6,19 +6,28 @@ kanban-plugin: board
 
 ## TODO
 
-- [ ] [[explain_theory]]
-- [ ] Probar con ADamW, basandonos en un modelo que ya funciona
-- [ ] Hacer un export y entrenamiento con todos los datos
-- [ ] Estudiar el paper de Leon y su repo para entender la Loss y como es el entrenamiento en su repo
 - [ ] Hacer una demo de la evolución de los heatmaps según los checkpoints
+- [ ] [[entrenamiento_sift_lg]]
 
 
 ## Doing
 
+- [ ] Empezar a tocar el SLAM y ver que tengo que hacer
+	[[Superpoint_SLAM]]
 
 
 ## Done
 
+- [ ] Insertar un Scheduler
+- [ ] Lanzar entrenamiento: 
+	- RTX 3090 bs32
+	- DGX bs96
+	- Investigar max bs con 2GPUs en DGX
+- [ ] Probar con ADamW, basandonos en un modelo que ya funciona
+- [ ] papeleo: entregar propuesta TFM
+- [ ] Estudiar el paper de Leon y su repo para entender la Loss y como es el entrenamiento en su repo
+- [ ] Hacer un export y entrenamiento con todos los datos
+- [ ] [[explain_theory]]
 - [ ] papeleo TFM
 - [ ] COn el export D hacer un export de th bajo y entrenar con th bajo
 - [ ] Averiguar si el heatmap está normalizado

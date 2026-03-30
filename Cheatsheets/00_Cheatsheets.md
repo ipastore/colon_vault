@@ -6,6 +6,13 @@
 [[tar]]
 [[dpkg]]
 [[apt]]
+[[grep]]
+[[awk]]
+[[xargs]]
+[[du]]
+
+
+
 
 # VS Code
 [[vscode]]
@@ -39,8 +46,23 @@
 # ffmpeg
 [[ffmpeg]]
 
+# ssh
+[[ssh]]
+
+# rsync
+[[rsync]]
+
+
+# Zen browser
+[[zen_shortcuts]]
+
 
 # Python
+
+## About the axis in np arrays and dim in torch tensors
+[[axis_dim]]
+[[cosine_distance]]
+[[L2_distance]]
 
 ## Other
 
@@ -50,8 +72,11 @@
 - [[idea_memory_profiling|Memory profiling]]
 - [[how_to_use_pdb|pdb]]
 - [[shortcuts_for_rectangle_macos.png]]
+- [[vpn_unizar]]
+
 
 # Passwords
 [[DGX]]
 [[Nvidia]]
 [[Nvidia Containers]]
+[[other_cpus]]

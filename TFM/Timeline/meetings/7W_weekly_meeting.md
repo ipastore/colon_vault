@@ -1,0 +1,12 @@
+- Parece ser que es mejor empezar con pesos porque tampoco hay mucha diferencia con el retrai=True
+- Insertar un learning rate scheduler
+- Posibilidad de utilizar polyak averaging: saca un promedio de los ultimos 5 checkpoints y hace un averaging de los pesos (de las redes). Eso se hace a lo últmo u offline, pero  Rubém dijo que hay un truquito para hacerlo online.
+- HAcer un run con weight decay. Se suele utilizar 5e-04
+- Lanzar entrenamientos para ver las curvas de las Losses: 
+	- RTX 3090 36
+	- DGX 96
+- Morlana dijo algo interesante: en vez de utilizar 8 GPUS, utilizas 2 y lanzas 4 al mismo timepo
+- Mi objetivo no es meter mucha mano en el SLAM sino poder hacerlo amigable para introducir diferentes modelos y analizar. Para eso tengo que posibilitar meter los 3 modelos SuperpointNet, SuperpointNet_gauss2 y MagicLeap. Teniendo los pesos en el repo, cargarlos y reportar. Es algo similar a lo que hice con la demo de superoint pero en el SLAM
+- Como agregado para el TFM se podría ver si se puede profundizar en el matching: hubo una conversación entre Morlana y Rubén: brute force vs guided-matching vs search for another match if failed by the tentative match (esto no se hace en el SLAM ahora). LA idea de profundizar sería jugar un poco con eso. 
+- Papeleo: enviar propuesta de TFM.
+- Por un momento Ruben pensó que había una doble softmax en el repo de Leon pero después pensaba que no. Entonces, no hago nada acá.
